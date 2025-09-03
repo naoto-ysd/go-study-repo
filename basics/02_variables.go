@@ -38,4 +38,11 @@ func main() {
 	fmt.Println(greeting)
 	fmt.Printf("名前のポインタ: %p, ポインタの指す値: %s\n", ptr, *ptr)
 	fmt.Printf("スライスの値: %v\n", slice)
+
+	// sliceの回数だけ繰り返す
+	for i := 0; i < len(slice); i++ {
+		fmt.Printf("スライスの要素 %d: %d\n", i, slice[i])
+	}
+
+	//
 }
