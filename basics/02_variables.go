@@ -44,5 +44,8 @@ func main() {
 		fmt.Printf("スライスの要素 %d: %d\n", i, slice[i])
 	}
 
-	//
+	// range
+	for i, v := range slice {
+		fmt.Printf("スライスの要素 %d: %d\n", i, v)
+	}
 }
