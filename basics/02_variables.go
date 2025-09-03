@@ -25,6 +25,9 @@ func main() {
 	// ポインタの宣言
 	var ptr *string = &name
 
+	// スライス
+	var slice = []int{1, 2, 3, 4, 5}
+
 	// 出力
 	fmt.Printf("名前: %s\n", name)
 	fmt.Printf("年齢: %d\n", age)
@@ -34,4 +37,5 @@ func main() {
 	fmt.Printf("円周率: %.2f\n", pi)
 	fmt.Println(greeting)
 	fmt.Printf("名前のポインタ: %p, ポインタの指す値: %s\n", ptr, *ptr)
+	fmt.Printf("スライスの値: %v\n", slice)
 }
