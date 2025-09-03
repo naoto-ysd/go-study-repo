@@ -15,11 +15,14 @@ help:
 run-basics:
 	@echo "=== Hello World ==="
 	go run basics/01_hello_world.go
-	@echo "\n=== 変数と定数 ==="
-	go run basics/02_variables.go
 	@echo "\n=== 制御構文 ==="
 	go run basics/03_control_flow.go
 
+# 変数と関数の実行
+run-variables:
+	@echo "\n=== 変数と定数 ==="
+	go run basics/02_variables.go
+	
 # 構造体とメソッドの実行
 run-structs:
 	@echo "=== 構造体とメソッド ==="
