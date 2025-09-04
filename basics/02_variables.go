@@ -48,4 +48,10 @@ func main() {
 	for i, v := range slice {
 		fmt.Printf("スライスの要素 %d: %d\n", i, v)
 	}
+
+	// 宣言と追加
+	x := []int{3, 4, 5}
+	x = append(x, 6, 7, 8)
+
+	fmt.Printf("追加後のスライスの値: %v\n", x)
 }
