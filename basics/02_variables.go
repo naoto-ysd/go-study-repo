@@ -54,4 +54,9 @@ func main() {
 	x = append(x, 6, 7, 8)
 
 	fmt.Printf("追加後のスライスの値: %v\n", x)
+
+	// スライスのスライス
+	y := []int{1, 2, 3, 4}
+	z := y[1:3]
+	fmt.Printf("スライスのスライスの値: %v\n", z)
 }
