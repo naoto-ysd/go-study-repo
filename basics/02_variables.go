@@ -64,6 +64,6 @@ func main() {
 	fmt.Printf("makeで作成したスライスの値: %v\n", x)
 
 	x = append(x, 1, 2, 3, 4)
-	y = z[:2:2]
+	y = x[:2:2]
 	fmt.Printf("スライスのスライスの値: %v\n", y)
 }
