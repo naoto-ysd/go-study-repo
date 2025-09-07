@@ -6,6 +6,8 @@ import "fmt"
 func main() {
 	totalWins := map[string]int{}
 
-	fmt.Println(totalWinns == nil)
-
+	fmt.Println(totalWins == nil)
+	fmt.Println(totalWins["abc"])
+	totalWins["abc"] = 3
+	fmt.Println(totalWins["abc"])
 }
