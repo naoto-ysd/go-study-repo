@@ -22,7 +22,11 @@ run-basics:
 run-variables:
 	@echo "\n=== 変数と定数 ==="
 	go run basics/02_variables.go
-	
+
+run-map:
+	@echo "\n=== マップ ==="
+	go run basics/04_map.go
+
 # 構造体とメソッドの実行
 run-structs:
 	@echo "=== 構造体とメソッド ==="
