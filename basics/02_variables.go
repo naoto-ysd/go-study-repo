@@ -66,4 +66,10 @@ func main() {
 	x = append(x, 1, 2, 3, 4)
 	y = x[:2:2]
 	fmt.Printf("スライスのスライスの値: %v\n", y)
+
+	// 文字列の操作
+	str := "Hello there"
+	sliceStr := string(str[6])
+	fmt.Printf("文字列の値: %s\n", str)
+	fmt.Printf("スライスの値: %s\n", sliceStr)
 }
