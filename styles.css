@@ -36,9 +36,7 @@ caption {
 }
 
 table {
-  /* コンテンツ幅に応じて広がる（必要時のみスクロールを発生させる） */
-  width: max-content;
-  min-width: 720px; /* 狭い画面で横スクロールを確実に出す閾値 */
+  width: 100%;
   border-collapse: collapse;
   background: white;
   border: 1px solid var(--border);
@@ -61,20 +59,7 @@ th {
 
 tr:last-child td { border-bottom: none; }
 
-/* 小さな画面での横スクロール対応 */
-/* 横スクロール用のラッパー */
-.table-scroll {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* スクロール時の影ヒント（オプション） */
-.table-scroll {
-  background:
-    linear-gradient(to right, white 30%, rgba(255,255,255,0)) left/20px 100% no-repeat,
-    linear-gradient(to left, white 30%, rgba(255,255,255,0)) right/20px 100% no-repeat;
-}
+/* 横スクロールラッパーは使用しないため削除 */
 
 /* フォーカスリングを整える */
 :focus-visible {
