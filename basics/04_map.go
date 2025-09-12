@@ -15,4 +15,9 @@ func main() {
 	mayBeZero["tom"] = 100
 	fmt.Printf("tomは100: %d\n", mayBeZero["tom"])
 	fmt.Printf("Bob is 0: %d\n", mayBeZero["bob"])
+
+	m := map[string]int{
+		"hello": 5,
+		"world": 0,
+	}
 }
