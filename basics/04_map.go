@@ -23,9 +23,17 @@ func main() {
 	delete(m, "world")
 	fmt.Printf("mの値: %d\n", m["world"])
 
+	// map & set
 	intSet := map[int]bool{}
 	vals := []int{5, 10, 2, 5, 8, 7, 3, 9, 1, 2, 10}
 	for _, v := range vals {
 		intSet[v] = true
+	}
+
+	fmt.Println(len(vals), len(intSet))
+	if intSet[100] {
+		fmt.Println("100 is in the set")
+	} else {
+		fmt.Println("100 is not in the set")
 	}
 }
