@@ -20,4 +20,6 @@ func main() {
 		"hello": 5,
 		"world": 0,
 	}
+	delete(m, "world")
+	fmt.Printf("mの値: %d\n", m["world"])
 }
