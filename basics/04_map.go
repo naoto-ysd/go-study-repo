@@ -22,4 +22,10 @@ func main() {
 	}
 	delete(m, "world")
 	fmt.Printf("mの値: %d\n", m["world"])
+
+	intSet := map[int]bool{}
+	vals := []int{5, 10, 2, 5, 8, 7, 3, 9, 1, 2, 10}
+	for _, v := range vals {
+		intSet[v] = true
+	}
 }
