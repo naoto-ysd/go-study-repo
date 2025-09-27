@@ -59,6 +59,45 @@ th {
 
 tr:last-child td { border-bottom: none; }
 
+/* クリック可能なヘッダー */
+.clickable-header {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: background .15s, color .15s;
+}
+.clickable-header:hover,
+.clickable-header:focus-visible {
+  background: var(--accent);
+  color: #fff;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,.35);
+}
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 24px 28px 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.15);
+  max-width: 420px;
+  width: 92%;
+  font: inherit;
+}
+
+.btn-close {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.btn-close:hover { filter: brightness(1.05); }
+.btn-close:active { transform: translateY(1px); }
+
 /* 横スクロールラッパーは使用しないため削除 */
 
 /* フォーカスリングを整える */
