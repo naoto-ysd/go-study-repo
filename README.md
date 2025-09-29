@@ -63,3 +63,14 @@ go build <ファイル名>.go
 - [Go公式ドキュメント](https://golang.org/doc/)
 - [A Tour of Go](https://tour.golang.org/)
 - [Effective Go](https://golang.org/doc/effective_go.html)
+
+
+
+## セットアップ
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
+```
