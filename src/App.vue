@@ -25,7 +25,7 @@
       </table>
     </div>
   </main>
-  <AppDialog :show="isDialogOpen" :label="selectedHeader + ' ヘッダー情報'" @update:show="v => isDialogOpen = v" @close="closeModal">
+  <AppDialog :label="selectedHeader + ' ヘッダー情報'" v-model:show="isDialogOpen" @close="closeModal">
     <p style="margin-top:0; font-weight:600">{{ selectedHeader }} のヘッダーがクリックされました</p>
     <p style="font-size:.9rem; color:#555">ここに {{ selectedHeader }} に関する追加情報を表示できます。</p>
     <div style="text-align:right; margin-top:16px;">
