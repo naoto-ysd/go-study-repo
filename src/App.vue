@@ -55,5 +55,4 @@ const closeModal = () => { isDialogOpen.value = false; };
 </script>
 
 <style>
-/* 既存 styles.css をグローバルとして利用。必要ならここに局所スタイル追加可 */
 </style>
