@@ -29,6 +29,7 @@
     <p style="margin-top:0; font-weight:600">{{ selectedHeader }} のヘッダーがクリックされました</p>
     <p style="font-size:.9rem; color:#555">ここに {{ selectedHeader }} に関する追加情報を表示できます。</p>
     <div style="text-align:right; margin-top:16px;">
+      <button type="button" @click="openModal('岐阜')" class="btn-close">岐阜を表示</button>
       <button type="button" @click="closeModal" class="btn-close">閉じる</button>
     </div>
   </AppDialog>
